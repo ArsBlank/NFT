@@ -1,0 +1,15 @@
+@import "components/logo";
+@import "components/background";
+@import "components/copyright";
+@import "components/form";
+
+@import "pages/app";
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
