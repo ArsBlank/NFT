@@ -1,3 +1,5 @@
+import { Checkbox } from "./UI/Checkbox";
+import { Input } from "./UI/Input";
 import { GoogleIcon } from "./icons/GoogleIcon";
 
 export default function Form() {
@@ -7,29 +9,16 @@ export default function Form() {
       <div className="form__desc">
         Please fill your detail to access your account.
       </div>
-      <label className="forms">
-        <span className="forms__title">Email</span>
-        <input
-          className="forms__input"
-          type="email"
-          name="email"
-          placeholder="Your Email"
-        />
-      </label>
-      <label className="forms">
-        <span className="forms__title">Password</span>
-        <input
-          className="forms__input"
-          type="password"
-          name="password"
-          placeholder="Your Password"
-        />
-      </label>
+
+      <Input title="Email" name="email" type="email" placeholder="Your Email" />
+      <Input
+        title="Password"
+        name="password"
+        type="password"
+        placeholder="Your Password"
+      />
       <div className="row">
-        <label className="chk">
-          <input type="checkbox" />
-          <span>Remember Me</span>
-        </label>
+        <Checkbox label="Remember me" />
         <a href="/">Forgot Password?</a>
       </div>
       <div className="form__btn">
