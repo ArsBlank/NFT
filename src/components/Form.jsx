@@ -1,4 +1,4 @@
-import { Googleicon } from "../../scss/components/icons/Googleicon";
+import { GoogleIcon } from "./icons/GoogleIcon";
 
 export default function Form() {
   return (
@@ -32,9 +32,17 @@ export default function Form() {
         </label>
         <a href="/">Forgot Password?</a>
       </div>
-      <Button> Sign In </Button>
-      <Googleicon />
-      <Button> Sign in with Google </Button>
+      <div className="form__btn">
+        <button className="btn _primary"> Sign In </button>
+        <button className="btn _secondary">
+          <GoogleIcon />
+          Sign in with Google
+        </button>
+      </div>
+      <div className="row _center">
+        Don’t have an account?
+        <a href="/">Sign up</a>
+      </div>
     </form>
   );
 }

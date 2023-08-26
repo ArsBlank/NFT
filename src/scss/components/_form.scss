@@ -1,6 +1,12 @@
 .form {
   max-width: 360px;
   margin: auto;
+  &__btn {
+    display: grid;
+    gap: 16;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
   &__title {
     color: #344054;
     font-family: Inter;
@@ -66,13 +72,30 @@ a {
   width: 100%;
   border: 0;
   outline: 0;
-  display: inline-flex;
-  padding: 12px 154px;
+  padding: 12px;
   gap: 10px;
   cursor: pointer;
   text-align: center;
-  &.__primary {
+  justify-content: center;
+
+  &._primary {
     border-radius: 8px;
-    background: #5429ff;
+    background: var(--primary-color, #5429ff);
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  &._secondary {
+    display: inline-flex;
+    padding: 10px 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-1, #d0d5dd);
   }
 }

@@ -1,4 +1,3 @@
-import Button from "./components/UI/Button.jsx";
 import Background from "./components/Background.jsx";
 import Copyright from "./components/Copyright.jsx";
 import Form from "./components/Form.jsx";
@@ -14,7 +13,6 @@ function App() {
       </div>
       <div className="sign-in__bg">
         <Background />
-        <Button></Button>
       </div>
     </div>
   );

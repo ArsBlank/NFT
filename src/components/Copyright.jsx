@@ -1,3 +1,3 @@
 export default function Copyright() {
-  return <div>hello</div>;
+  return <div className="Copyright">@CreatedbyNAMDesign</div>;
 }
