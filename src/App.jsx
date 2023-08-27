@@ -12,7 +12,7 @@ function App() {
         <Copyright />
       </div>
       <div className="sign-in__bg">
-        <Background />
+        <Background src="Bg.png" alt="alt" />
       </div>
     </div>
   );
