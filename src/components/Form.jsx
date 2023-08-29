@@ -1,5 +1,5 @@
-import { Checkbox } from "./UI/Checkbox";
-import { Input } from "./UI/Input";
+import { Checkbox } from "./UI/Checkbox/Checkbox";
+import { Input } from "./UI/input/Input";
 import { GoogleIcon } from "./icons/GoogleIcon";
 
 export default function Form() {

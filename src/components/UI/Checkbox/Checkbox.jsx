@@ -1,3 +1,4 @@
+import "./_checkbox.scss";
 export const Checkbox = ({ label }) => {
   return (
     <label className="chk">
